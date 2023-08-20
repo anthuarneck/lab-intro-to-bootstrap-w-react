@@ -7,3 +7,55 @@
 .post-image-height {
   height: 250px;
 }
+
+.card {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.col-8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  height: 200px;
+}
+
+.header {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+.footer {
+  background-color: gold;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  main {
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-8 {
+    display: block;
+  }
+}
